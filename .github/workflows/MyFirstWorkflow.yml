@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greetings
-        run: echo "Hello World"
+        run: |
+          echo "Hello 1"
+          echo "This is line 2"
 
      
 
