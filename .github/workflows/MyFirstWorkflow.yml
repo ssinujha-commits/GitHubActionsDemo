@@ -1,11 +1,6 @@
 
 name: MyFirstWorkflow
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   MyFirstJob:
@@ -15,6 +10,11 @@ jobs:
         run: |
           echo "Hello 1"
           echo "This is line 2"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run: echo "This is test phase"
 
      
 
