@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Multiple Jobs
-        run: echo"Hello, ${{vars.MY_NAME}}"
+        run: echo "Hello, ${{vars.MY_NAME}}"
  
 
      
