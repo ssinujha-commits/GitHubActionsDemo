@@ -12,6 +12,7 @@ jobs:
           echo "Inside line 2 of Job1"
   test:
     runs-on: ubuntu-latest
+    needs: MyFirstJob
     steps:
       - name: Test Phase
         run: echo "This is test phase"
