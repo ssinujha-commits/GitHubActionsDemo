@@ -6,10 +6,10 @@ jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
     steps:
-      - name: Greetings
+      - name: Multiple Jobs
         run: |
-          echo "Hello 1"
-          echo "This is line 2"
+          echo "Inside Job1"
+          echo "Inside line 2 of Job1"
   test:
     runs-on: ubuntu-latest
     steps:
