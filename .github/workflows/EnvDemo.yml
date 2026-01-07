@@ -8,8 +8,8 @@ jobs:
     env:
       APP_ENV: "test"
     steps: 
-     - name: Connecting to Env
-       env:
-        APP_ENV: "prod"
-        run: echo "App is connecting to $APP_ENV"
+       - name: Connecting to Env
+         env:
+          APP_ENV: "prod"
+          run: echo "App is connecting to $APP_ENV"
       
