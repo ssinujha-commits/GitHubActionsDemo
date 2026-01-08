@@ -2,9 +2,10 @@ name: Outputs Demo
 on: push
 jobs:
  build:
-    runs-on: ubuntu-latest
-    outputs: ${{steps.step1.outputs.version}}
-    steps:
+  outputs:
+   version: ${{steps.step1.outputs.version}}
+  runs-on: ubuntu-latest
+  steps:
       - name: step one
         id: step1
         run: echo "version=0.1" >> $GITHUB_OUTPUT
